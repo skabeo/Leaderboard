@@ -77,38 +77,46 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-
-`git clone https://github.com/skabeo/Leaderboard.git`
-`cd Leaderboard`
-
+```
+git clone https://github.com/skabeo/Leaderboard.git
+cd Leaderboard
+```
 
 ### Install
 
 Install this project with:
 
-- cd Todo-list
-- npm install
+```
+cd Todo-list
+npm install
+```
 
 
 ### Usage
 
 To run the project, execute the following command:
 
-- npm start
+```
+npm start
+```
 
 
 ### Run tests
 
 To run tests, run the following command:
 
-- npm run test
+```
+npm test
+```
 
 
 ### Deployment
 
 You can deploy this project using:
 
-- run build
+```
+Github pages
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -14,7 +14,7 @@ export default class Game {
 
     if (this.board.length === 0) {
       const li = document.createElement('li');
-      li.innerHTML = 'No recent score';
+      li.innerHTML = 'Click refresh for recent scores';
       li.classList.add('empty');
       gameList.appendChild(li);
     }
@@ -31,11 +31,3 @@ export default class Game {
     }
   }
 }
-
-const refresh = document.querySelector('#refresh');
-refresh.addEventListener('click', () => {
-  const gameList = document.querySelector('#display-scores');
-  gameList.innerHTML = 'No recent score';
-  gameList.classList.add('empty');
-  localStorage.clear();
-});

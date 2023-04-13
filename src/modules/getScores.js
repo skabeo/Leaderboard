@@ -23,7 +23,7 @@ refreshButton.addEventListener('click', async () => {
     const li = document.createElement('li');
     li.innerText = `${score.user}: ${score.score}`;
     if (index % 2 === 1) {
-      li.style.backgroundColor = '#e9e9e9';
+      li.classList.add('even');
     }
     scoresList.appendChild(li);
   });

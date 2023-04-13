@@ -8,19 +8,27 @@
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-weight: 700;
 }
 
 body {
   font-family: 'Comic Neue', cursive;
+  background-color: bisque;
+  padding-top: 70px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.6);
+  width: max-content;
+  margin: 0 auto;
+  height: 75vh;
 }
 
 main {
-  border: 2px solid black;
-  width: max-content;
-  margin: 0 auto;
   padding: 20px 40px;
 }
 
@@ -42,6 +50,10 @@ main {
   margin-top: 15.5px;
 }
 
+.even {
+  background-color: #f38c78;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -53,6 +65,14 @@ main {
 #score {
   font-family: inherit;
   padding: 3px;
+  background-color: #f38c78;
+  border: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+}
+
+#name::placeholder,
+#score::placeholder {
+  color: inherit;
 }
 
 #submit {
@@ -60,26 +80,55 @@ main {
   font-weight: bold;
   width: 35%;
   margin-left: auto;
-  background-color: white;
+  background-color: #f38c78;
+  border: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s;
+}
+
+#submit:hover {
+  background-color: #b14e3a;
+  color: white;
 }
 
 #refresh {
   font-family: inherit;
   font-weight: bold;
-  background-color: white;
+  background-color: #f38c78;
+  border: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s;
+}
+
+#refresh:hover {
+  background-color: #b14e3a;
+  color: white;
 }
 
 ul {
   list-style: none;
   padding: 0;
-  border: 2px solid black;
+  border: 2px solid #f38c78;
 }
 
 li {
   padding: 3px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+li:hover {
+  font-weight: 700;
+  padding: 5px 3px;
 }
 
 .empty {
   color: red;
   padding: 3px;
+}
+
+.copyright {
+  padding: 8px 40px;
+  background-color: #f38c78;
+  font-weight: 700;
 }

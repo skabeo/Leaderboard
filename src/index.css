@@ -48,6 +48,23 @@ main {
 
 #display-scores {
   margin-top: 15.5px;
+  height: 40vh;
+  overflow-y: auto;
+}
+
+#display-scores::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
+#display-scores:hover::-webkit-scrollbar {
+  width: 10px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f38c78;
+  border-radius: 5px;
 }
 
 .even {
@@ -119,7 +136,6 @@ li {
 
 li:hover {
   font-weight: 700;
-  padding: 5px 3px;
 }
 
 .empty {
